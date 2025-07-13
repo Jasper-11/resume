@@ -4,4 +4,5 @@ services:
     env: python
     buildCommand: "./build.sh"
     startCommand: "./start.sh"
-    pythonVersion: 3.10.11 
+    pythonVersion: "3.10.11"
+    plan: free 
