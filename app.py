@@ -23,11 +23,6 @@ def not_found(error):
     return send_from_directory('dist', 'index.html')
 
 if __name__ == '__main__':
-    # Check if dist directory exists, if not build the project
-    if not os.path.exists('dist'):
-        print("Building Vue.js project...")
-        os.system('npm run build')
-    
     print("Starting Flask server...")
     print("Resume site available at: http://localhost:5001")
     app.run(debug=False, host='0.0.0.0', port=int(os.environ.get('PORT', 5001))) 
