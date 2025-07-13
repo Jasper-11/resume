@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: resume
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "./start.sh"
+    pythonVersion: 3.10.11 
